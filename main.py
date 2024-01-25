@@ -31,6 +31,7 @@ If the background color of a letter in your word is gray, the letter is not in t
 If the background color of a letter in your word is yellow, the letter is somewhere else in the word.
 If the background color of a letter in your word is green, the letter is in the right place.
 Every word is five letters long.
+Every word must be an english word.
 Enter q or quit to end the game.
 Good luck!
 """
@@ -67,7 +68,7 @@ while True:
                 if not i in alphabet:
                     contains = True
             if contains:
-                print("Your word containes symbols and/or numbers and/or spaces. Please enter word with five letters.")
+                print("Your word contains symbols and/or numbers and/or spaces. Please enter word with five letters.")
                 continue
 
             if word.lower() == "q" or word.lower() == "quit":
